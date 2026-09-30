@@ -1,0 +1,20 @@
+{
+  "name": "my-agent-pack",
+  "version": "1.0.0",
+  "description": "Personal opencode agent pack — orchestrator router with 15 specialist subagents",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "files": ["agents", "commands", "scripts"],
+  "scripts": {
+    "install": "node scripts/install.mjs",
+    "check": "node scripts/install.mjs --check",
+    "list": "node scripts/install.mjs --list",
+    "dry-run": "node scripts/install.mjs --dry-run",
+    "uninstall": "node scripts/install.mjs --uninstall"
+  },
+  "keywords": ["opencode", "agents", "subagents", "orchestration", "router"],
+  "engines": {
+    "node": ">=18"
+  }
+}
